@@ -20,9 +20,25 @@ namespace Csigaverseny___VA
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void startG(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ujFutamGomb(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ujBajnoksagGomb(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

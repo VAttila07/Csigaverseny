@@ -5,8 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Csigaverseny___VA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Name="csigaVAblak"
+        Title="Csigaverseny" Height="768" Width="1024">
     <Grid>
-        
+        <Rectangle Fill="#41980a" HorizontalAlignment="Left" Height="563" Margin="20,50,0,0" VerticalAlignment="Top"
+               Width="940"/>
+        <Rectangle Name="csigaUt1" HorizontalAlignment="Left" Height="176" Margin="20,50,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939" StrokeThickness="0"/>
+        <Rectangle Name="csigaUt2" HorizontalAlignment="Left" Height="174" Margin="20,228,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939" StrokeThickness="0"/>
+        <Rectangle Name="csigaUt3" HorizontalAlignment="Left" Height="206" Margin="20,405,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939" StrokeThickness="0"/>
+        <Label Content="START" HorizontalAlignment="Left" Margin="137,230,0,0" VerticalAlignment="Top"
+           FontSize="120" FontFamily="Tahoma" Foreground="#FFEEEEEE" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Label>
+        <Label Content="CÉL" HorizontalAlignment="Right" Margin="0,230,0,0" VerticalAlignment="Top"
+           FontSize="120" FontFamily="Tahoma" Foreground="#FFEEEEEE" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </Label>
+        <Rectangle Name="vonal1" Fill="Black" HorizontalAlignment="Left" Height="561" Margin="220,50,0,0"
+               Stroke="Black" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Name="vonal2" Fill="Black" HorizontalAlignment="Right" Height="561" Margin="0,50,56,0"
+               Stroke="Black" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="2" Margin="20,226,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="2" Margin="20,403,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="2" Margin="20,611,0,0" Stroke="Black"
+               VerticalAlignment="Top" Width="939"/>
+        <Image Name="csiga1" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" Width="200"
+           Source="csiga01.png" Height="155" RenderTransformOrigin="0.5,0.5"/>
+        <Image Name="csiga2" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="200"
+           Source="csiga2.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="csiga3" HorizontalAlignment="Left" Margin="20,410,0,0" VerticalAlignment="Top" Width="200"
+           Source="csiga3.png" Height="191"/>
+        <Button Click="startG" Name="startGomb" Content="Start" HorizontalAlignment="Left"
+            Margin="20,10,0,0" VerticalAlignment="Top" Width="160" FontSize="20"/>
+        <Button Click="ujFutamGomb" Name="ujFutam" Content="Új futam" HorizontalAlignment="Left"
+            Margin="195,10,0,0" VerticalAlignment="Top" Width="160" FontSize="20"/>
+        <Button Click="ujBajnoksagGomb" Name="ujBajnoksag" Content="Új bajnokság"
+            HorizontalAlignment="Left" Margin="372,10,0,0" VerticalAlignment="Top" Width="160" FontSize="20"/>
+        <Label Name="elertHely1" Content="" HorizontalAlignment="Left" Margin="575,73,0,0" VerticalAlignment="Top"
+           FontSize="72" FontFamily="Showcard Gothic"/>
+        <Label Name="elertHely2" Content="" HorizontalAlignment="Left" Margin="575,250,0,0" VerticalAlignment="Top"
+           FontSize="72" FontFamily="Showcard Gothic"/>
+        <Label Name="elertHely3" Content="" HorizontalAlignment="Left" Margin="575,455,0,0" VerticalAlignment="Top"
+           FontSize="72" FontFamily="Showcard Gothic"/>
+        <Label Content="A bajnokság jelenlegi eredményei:" HorizontalAlignment="Left" Margin="20,611,0,0"
+           VerticalAlignment="Top" RenderTransformOrigin="0,0" FontSize="20"/>
+        <Label Name="bajnoksagEredmenyei" Content="" HorizontalAlignment="Left" Margin="345,613,0,0"
+           VerticalAlignment="Top" FontSize="20"/>
     </Grid>
 </Window>

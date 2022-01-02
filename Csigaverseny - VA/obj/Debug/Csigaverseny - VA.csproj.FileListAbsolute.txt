@@ -1,0 +1,15 @@
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.csprojAssemblyReference.cache
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\MainWindow.g.cs
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\App.g.cs
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA_MarkupCompile.cache
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA_MarkupCompile.lref
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\bin\Debug\Csigaverseny - VA.exe.config
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\bin\Debug\Csigaverseny - VA.exe
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\bin\Debug\Csigaverseny - VA.pdb
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\MainWindow.baml
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.g.resources
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny___VA.Properties.Resources.resources
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.csproj.GenerateResource.cache
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.csproj.CoreCompileInputs.cache
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.exe
+D:\Programozás\Projects\VA-Csigaverseny\Csigaverseny\Csigaverseny - VA\obj\Debug\Csigaverseny - VA.pdb
