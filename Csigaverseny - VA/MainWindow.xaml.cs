@@ -31,28 +31,29 @@ namespace Csigaverseny___VA
           Brushes.SandyBrown
         };
 
-        private double vonal2a;
-        internal MainWindow csigaVAblak;
-        internal Rectangle csigaUt1;
-        internal Rectangle csigaUt2;
-        internal Rectangle csigaUt3;
-        internal Rectangle rajtVonal;
-        internal Rectangle celVonal;
-        internal Image csiga01;
-        internal Image csiga02;
-        internal Image csiga03;
-        internal Button startGomb;
-        internal Button ujFutam;
-        internal Button ujBajnoksag;
-        internal Label elertHely1;
-        internal Label elertHely2;
-        internal Label elertHely3;
-        internal Label bajnoksagEredmenyei;
         private bool tartalomBetolt;
+        private double celvonalErteke;
 
         public MainWindow()
         {
             InitializeComponent();
+            ujBajnoksag.Click += new RoutedEventHandler(ujFutamGomb);
+            csigakBeallitasa();
+            timer.Interval = TimeSpan.FromSeconds(0.051);
+            timer.Tick += new EventHandler(timer_Tick);
+            Random rnd = new Random();
+            ujFutam.IsEnabled = false;
+            celvonalErteke = vonal2.Margin.Left;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void csigakBeallitasa()
+        {
+            throw new NotImplementedException();
         }
 
         private void startG(object sender, RoutedEventArgs e)
