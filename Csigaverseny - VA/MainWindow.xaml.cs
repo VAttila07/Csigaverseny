@@ -70,5 +70,9 @@ namespace Csigaverseny___VA
         {
 
         }
+
+        private class Csiga
+        {
+        }
     }
 }
