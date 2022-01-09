@@ -43,6 +43,7 @@ namespace Csigaverseny___VA
             csigakBeallitasa();
             timer.Interval = TimeSpan.FromSeconds(0.051);
             timer.Tick += new EventHandler(timer_Tick);
+            Bajnoksag = new Bajnoksag();
             ujFutam.IsEnabled = false;
             celvonalErteke = vonal2.Margin.Left;
         }
@@ -57,19 +58,9 @@ namespace Csigaverseny___VA
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            if (csiga01.Margin.Left < celvonalErteke)
-            {
-                csiga01.Margin = new Thickness(csiga01.Margin.Left + rnd.Next(1, 8), csiga01.Margin.Top, 0, 0);
-            }
-            if (csiga02.Margin.Left < celvonalErteke)
-            {
-                csiga02.Margin = new Thickness(csiga02.Margin.Left + rnd.Next(1, 8), csiga02.Margin.Top, 0, 0);
-            }
-            if (csiga03.Margin.Left < celvonalErteke)
-            {
-                csiga03.Margin = new Thickness(csiga03.Margin.Left + rnd.Next(1, 8), csiga03.Margin.Top, 0, 0);
-            }
+           
         }
+
         private void startG(object sender, RoutedEventArgs e)
         {
 
@@ -90,30 +81,48 @@ namespace Csigaverseny___VA
         public class Csiga
         {
             private string csNev;
-            private int pont;
-            private int[] helyezes;
-            private int[] pontok = new int[4] { 0, 3, 2, 1 };
+            public int pontSzam = 0;
+            public int elsoHelyekSzama = 0;
+            public int masodikHelyezesekSzama = 0;
+            public int harmadikHelyezesekSzama = 0;
 
             public Csiga(string csigaNev)
             {
                 csNev = csigaNev;
-                helyezes = new int[4];
             }
-
-            public int Pont => helyezes[1] * pontok[1] + helyezes[2] * pontok[2] + helyezes[3] * pontok[3];
 
             public string Nev
             {
                 get => csNev;
                 private set => csNev = value;
             }
-
-            public int[] Helyezes
+            public void Move(double celvonalErtek, int randomszam)
             {
-                get => helyezes;
-                set => helyezes = value;
 
             }
+        }
+    }
+    public class Bajnoksag
+    {
+        public List<MainWindow.Csiga> pontozasiSorrend = new List<MainWindow.Csiga>();
+
+        public void uj()
+        {
+            var itemMoved = false;
+            do
+            {
+                itemMoved = false;
+                for (int i = 0; i < pontozasiSorrend.Count() - 1; i++)
+                {
+                    if (pontozasiSorrend[i].pontSzam < pontozasiSorrend[i + 1].pontSzam)
+                    {
+                        var higherValue = pontozasiSorrend[i];
+                        pontozasiSorrend[i] = pontozasiSorrend[i + 1];
+                        pontozasiSorrend[i + 1] = higherValue;
+                        itemMoved = true;
+                    }
+                }
+            } while (itemMoved);
         }
     }
 }

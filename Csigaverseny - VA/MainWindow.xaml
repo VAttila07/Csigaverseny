@@ -42,7 +42,21 @@
                VerticalAlignment="Top" Width="939"/>
         <Rectangle Fill="Black" HorizontalAlignment="Left" Height="2" Margin="20,611,0,0" Stroke="Black"
                VerticalAlignment="Top" Width="939"/>
-        
+        <Image Name="csiga01" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" Width="200"
+           Source="csiga01.png" Height="155" RenderTransformOrigin="0.5,0.5"/>
+        <Image Name="csiga02" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="184"
+           Source="csiga2.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="csiga03" HorizontalAlignment="Left" Margin="20,410,0,0" VerticalAlignment="Top" Width="195"
+           Source="csiga3.png" Height="165"/>
         <Button Click="startG" Name="startGomb" Content="Start" HorizontalAlignment="Left"
             Margin="20,10,0,0" VerticalAlignment="Top" Width="160" FontSize="20"/>
         <Button Click="ujFutamGomb" Name="ujFutam" Content="Új futam" HorizontalAlignment="Left"
@@ -59,28 +73,5 @@
            VerticalAlignment="Top" RenderTransformOrigin="0,0" FontSize="20"/>
         <Label Name="bajnoksagEredmenyei" Content="" HorizontalAlignment="Left" Margin="345,613,0,0"
            VerticalAlignment="Top" FontSize="20"/>
-        <Rectangle Name="csiga02" Stroke="Black" StrokeThickness="0" Margin="20,250,808,357" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
-                    <SkewTransform AngleY="0" AngleX="0"/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="csiga2.png" />
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle Name="csiga03" Stroke="Black" StrokeThickness="0" Margin="20,455,818,152">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="csiga3.png" />
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle Name="csiga01" Width="200" Stroke="Black" StrokeThickness="0" Margin="20,73,796,534">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="csiga01.png" />
-            </Rectangle.Fill>
-        </Rectangle>
     </Grid>
 </Window>
