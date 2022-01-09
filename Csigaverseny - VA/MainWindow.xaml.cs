@@ -57,9 +57,19 @@ namespace Csigaverseny___VA
 
         private void timer_Tick(object sender, EventArgs e)
         {
-           
+            if (csiga01.Margin.Left < celvonalErteke)
+            {
+                csiga01.Margin = new Thickness(csiga01.Margin.Left + rnd.Next(1, 8), csiga01.Margin.Top, 0, 0);
+            }
+            if (csiga02.Margin.Left < celvonalErteke)
+            {
+                csiga02.Margin = new Thickness(csiga02.Margin.Left + rnd.Next(1, 8), csiga02.Margin.Top, 0, 0);
+            }
+            if (csiga03.Margin.Left < celvonalErteke)
+            {
+                csiga03.Margin = new Thickness(csiga03.Margin.Left + rnd.Next(1, 8), csiga03.Margin.Top, 0, 0);
+            }
         }
-
         private void startG(object sender, RoutedEventArgs e)
         {
 
