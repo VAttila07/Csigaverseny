@@ -42,9 +42,9 @@
                VerticalAlignment="Top" Width="939"/>
         <Rectangle Fill="Black" HorizontalAlignment="Left" Height="2" Margin="20,611,0,0" Stroke="Black"
                VerticalAlignment="Top" Width="939"/>
-        <Image Name="csiga1" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" Width="200"
+        <Image Name="csiga01" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" Width="200"
            Source="csiga01.png" Height="155" RenderTransformOrigin="0.5,0.5"/>
-        <Image Name="csiga2" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="200"
+        <Image Name="csiga02" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="200"
            Source="csiga2.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -55,7 +55,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="csiga3" HorizontalAlignment="Left" Margin="20,410,0,0" VerticalAlignment="Top" Width="200"
+        <Image Name="csiga03" HorizontalAlignment="Left" Margin="20,410,0,0" VerticalAlignment="Top" Width="200"
            Source="csiga3.png" Height="191"/>
         <Button Click="startG" Name="startGomb" Content="Start" HorizontalAlignment="Left"
             Margin="20,10,0,0" VerticalAlignment="Top" Width="160" FontSize="20"/>

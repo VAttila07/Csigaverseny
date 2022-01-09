@@ -86,30 +86,6 @@ namespace Csigaverseny___VA
 #line hidden
 
 
-#line 45 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image csiga1;
-
-#line default
-#line hidden
-
-
-#line 47 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image csiga2;
-
-#line default
-#line hidden
-
-
-#line 58 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image csiga3;
-
-#line default
-#line hidden
-
-
 #line 60 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button startGomb;
@@ -269,6 +245,9 @@ namespace Csigaverseny___VA
         }
 
         internal System.Windows.Window csigaVAblak;
+        internal System.Windows.Controls.Image csiga01;
+        internal System.Windows.Controls.Image csiga02;
+        internal System.Windows.Controls.Image csiga03;
     }
 }
 
